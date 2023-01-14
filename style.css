@@ -1,0 +1,136 @@
+* {
+    scroll-behavior: smooth;
+
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    height: 720px;
+    background: rgb(103, 103, 103);
+    border-top: 1px solid #d00000;
+    
+}
+h2 {
+    background: #000;
+    color: #d00000;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+h2 a {
+    color: #fff;
+}
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background: #2a2a2a;
+    color: #ebe9e9;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 3;
+    top: -5px;
+}
+.logo {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: #fff;
+}
+.nav-links  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    height: 100%;
+}
+.nav-links a {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ebe9e9;
+    transition: .6s;
+}
+.nav-links a:hover {
+    background: #000;
+    color: #ebe9e9;
+    
+}
+.menu-icon {
+    display: none;
+    margin-right: 30px;
+    height: 30px;
+    width: 30px;
+}
+.menu-icon img {
+    transition: .7s;
+}
+
+#menu-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background: #000;
+    width: 200px;
+    justify-content: space-around;
+}
+#menu-links a{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #afafaf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #000;
+    color: #afafaf;
+}
+footer a {
+    color: #d00000;
+}
+
+  
+
+
+@media screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 800px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-icon {
+        display: flex;
+    }
+}

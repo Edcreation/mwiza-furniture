@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="icon" type="image/x-icon" href="./images/appstore.png">
+    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Mwiza Furnitures</title>
+</head>
+<body>
+    
+    <h2 ><marquee behavior="" direction="let" scrollamount="6" >Don't Miss out.Free Delivery <a href="">Check us out</a> Get 10% off</marquee></h2>
+    <nav>
+        <a href="" class="logo">Mwiza</a>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#aboutus">About Us</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="menu-icon" id="icon" onclick="display()"><img src="./images/menu.png" id="img" alt="image"></div>
+        <div id="menu-links">
+            <a href="#">Home</a>
+            <a href="#aboutus">About Us</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </nav>
+    <script>
+        function display(){
+            var myImage = document.querySelector('img');
+            myImage.onclick = function() {
+                    var mySrc = myImage.getAttribute('src');
+                    if(mySrc === './images/menu.png') {
+                        myImage.setAttribute ('src','./images/close.png');
+                    } else {
+                        myImage.setAttribute ('src','./images/menu.png');
+                    }
+            };
+            x = document.getElementById('icon')
+            m = document.getElementById('menu-links');
+            if(m.style.display == "none"){
+                m.style.display = "flex";
+                x.classList.add("close")
+            }
+            else {
+                m.style.display = "none";
+            }
+        }
+    </script>
+    <section id="intro">
+        <div class="intro-box">
+            <div class="intro-title">
+                Experience luxury and comfort in every room with our designer furniture pieces
+            </div>
+            <div class="intro-sub-title">
+                Elevate your home decor with our exclusive furniture collection
+            </div>
+            <label for="email">Become Our Dearest Customer.</label>
+            <form action="">
+                <input type="email" name="email" id="email"><button>Get Started</button>
+            </form>
+        </div>
+    </section>
+    <section id="aboutus">
+        <div class="abt">About Us</div>
+        <div class="a-text">
+            <p>Welcome to our furniture company! We have been crafting high-quality,
+                 hand-made furniture for over 20 years.
+            </p> 
+            <p> 
+                <span>Our mission</span> is to provide our customers with beautiful, 
+                functional pieces that will last a lifetime. We believe in 
+                using only the finest materials and traditional craftsmanship 
+                methods to create furniture that is both stylish and durable.   
+            </p>
+            <div class="line"></div>
+            </div>
+    </section>
+    <section id="gallery">
+        <div class="glr">Gallery</div>
+        <a href="" class="g-card1 g-card" >
+            <div class="g-text">
+                Living Room Furniture
+            </div>
+        </a>
+        <a href="" class="g-card2 g-card">
+            <div class="g-text">
+                Dining Room Furniture
+            </div>
+        </a>
+        <a href="" class="g-card3 g-card">
+            <div class="g-text">
+                Kitchen Furniture
+            </div>
+        </a>
+        <a href="" class="g-card4 g-card">
+            <div class="g-text">
+                Outside Furniture
+            </div>
+        </a>
+        <a href="" class="g-card5 g-card">
+            <div class="g-text">
+                Lamps and Lighting
+            </div>
+        </a>
+        <a href="" class="g-card6 g-card">
+            <div class="g-text">
+                Home Tools and Appliences
+            </div>
+        </a>
+    </section>
+    <section id="contact">
+            <div class="cont-container">
+                <form action="">
+                    <h2>Contact Us</h2>
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="" required>
+                    <label for="">Phone Number</label>
+                    <input type="tel" name="tel" id="">
+                    <label for="">Message</label>
+                    <textarea name="msg" id="" cols="30" rows="10"></textarea>
+                    <button>Send</button>
+                </form>
+            </div>
+    </section>
+    <footer>
+        <p>Call Us on +250 781 732 598</p>
+        <p>Kimironko, Kibagabaga</p>
+        <p>Website created by <a href="https://edportfolio-production.up.railway.app/home">edcreation</a></p>
+    </footer>
+    
+    
+</body>
+</html>
